@@ -3,7 +3,12 @@
     <div class="ui container">
       <%= link_to 'Home', root_path, class: 'item' %>
       <%= link_to 'Help', help_path, class: 'item' %>
-      <%= link_to 'Log in', '#', class: 'right item' %>
+      <div class="right item">
+        <%= link_to 'Sign up', signup_path, class: 'ui button' %>
+      </div>
+      <div class="item">
+        <%= link_to 'Log in', '#', class: 'ui button' %>
+      </div>
     </div>
   </div>
 </header>
