@@ -8,19 +8,11 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="ui attached stackable menu">
-        <div class="ui container">
-          <%= link_to 'Home', { controller: 'static_pages', action: 'home' }, class: 'item' %>
-          <%= link_to 'Help', { controller: 'static_pages', action: 'help' }, class: 'item' %>
-          <%= link_to 'About', { controller: 'static_pages', action: 'about' }, class: 'item' %>
-          <%= link_to 'Contact', { controller: 'static_pages', action: 'contact' }, class: 'item' %>
-          <%= link_to 'Log in', '#', class: 'right item' %>
-        </div>
+    <%= render 'layouts/header' %>
+    <main class="main">
+      <div class="ui container">
+        <%= yield %>
       </div>
-    </header>
-    <div class="ui container">
-      <%= yield %>
-    </div>
+    </main>
   </body>
 </html>
