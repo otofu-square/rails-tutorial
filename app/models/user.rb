@@ -8,6 +8,10 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Indexes
+#
+#  index_users_on_email  (email) UNIQUE
+#
 
 class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 50 }
