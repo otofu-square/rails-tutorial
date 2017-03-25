@@ -1,14 +1,13 @@
-<header class="header">
-  <div class="ui attached stackable menu">
-    <div class="ui container">
-      <%= link_to 'Home', root_path, class: 'item' %>
-      <%= link_to 'Help', help_path, class: 'item' %>
-      <div class="right item">
-        <%= link_to 'Sign up', signup_path, class: 'ui button' %>
-      </div>
-      <div class="item">
-        <%= link_to 'Log in', '#', class: 'ui button' %>
-      </div>
-    </div>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "sample app", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Help', help_path %></li>
+        <li><%= link_to "Log in", '#' %></li>
+        <li><%= link_to 'Sign up', signup_path, class: 'ui button' %></li>
+      </ul>
+    </nav>
   </div>
 </header>
