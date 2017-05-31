@@ -40,6 +40,10 @@ gem 'bootstrap-sass'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
 end
 
 group :development do

@@ -50,6 +50,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -120,6 +122,17 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
+    pry-doc (0.10.0)
+      pry (~> 0.9)
+      yard (~> 0.9)
+    pry-rails (0.3.5)
+      pry (>= 0.9.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     puma (3.8.2)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -196,6 +209,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    yard (0.9.8)
 
 PLATFORMS
   ruby
@@ -213,6 +227,10 @@ DEPENDENCIES
   listen (~> 3.0.5)
   minitest-reporters
   pg
+  pry-byebug
+  pry-doc
+  pry-rails
+  pry-stack_explorer
   puma (~> 3.0)
   rails (~> 5.0.2)
   rails-controller-testing
